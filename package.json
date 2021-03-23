@@ -1,0 +1,17 @@
+{
+  "name": "nest-micro",
+  "version": "1.0.0",
+  "description": "NestJS microservices backend api",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npm run --prefix user start:dev & npm run --prefix gateway start:dev"
+  },
+  "keywords": [
+    "Nestjs",
+    "microservices"
+  ],
+  "author": "pacobabs",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}

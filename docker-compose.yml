@@ -1,0 +1,20 @@
+version: "3"
+services:
+  dira:
+    build: ./
+    restart: always
+    hostname: gateway
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    networks:
+      - backend
+      - frontend
+networks:
+  backend:
+    driver: bridge
+  frontend:
+    external:
+      name: infrastructure
+  default:
